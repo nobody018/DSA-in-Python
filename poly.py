@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Apr 25 14:13:09 2024
-
-@author: linuxmint
-"""
-
-
 class Node:
     def __init__(self, coff, exp):
         self.coff = coff
