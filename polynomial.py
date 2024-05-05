@@ -41,12 +41,44 @@ def derivation(l1):
     print()
 
 poly1 = PolynomialLinkedList()
-poly1.insert(3,2)
-poly1.insert(4,3)
+
+while True:
+    print("\nChoose Any Options")
+    print("1. Create Polynomial (Single variable)")
+    print("2. Display Polynomial")
+    print("3. Derivative of the Polynomial")
+    print("0. Exit")
+    choice =int(input("Enter your Choice........... \n"))
 
 
-print("\n Polynomial: ")
-poly1.show()
 
-derivation(poly1)
+
+
+    if choice == 1:
+        coef = int(input("Enter the Coefficient: "))
+        exp = int(input("Enter the Exponent: "))
+        poly1.insert(coef, exp)
+        print("data is inserted \n")
+
+    elif choice == 2:
+        print("\n List:")
+        poly1.show()
+        print("\n")
+
+    elif choice == 3:
+        derivation(poly1)
+    
+    elif choice == 0:
+        break
+
+    else:
+        print("Choice is not valid")
+        print("\n\nPress any key to continue..............")
+        ch = input()
+
+
+
+
+
+
 
