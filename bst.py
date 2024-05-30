@@ -56,6 +56,7 @@ r = insert(r, 40)
 r = insert(r, 70)
 r = insert(r, 60)
 r = insert(r, 80)
+
 print("Inorder:")
 display_inorder(r)
 print("Preorder:")
@@ -64,4 +65,8 @@ print("Postorder:")
 display_postorder(r)
 
 search = bstsearch(r,70)
-print(search)
+
+if search:
+    print("key Found")
+else:
+    print("not found")
